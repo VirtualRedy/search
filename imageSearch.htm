@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SearchImage</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- link to the other two pages 'image-search' 'advanced-search' --> 
+        <div class="topContainer">
+            <style>
+                div[class="row"] {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    margin: 15px
+                }
+
+                .logoCol {
+                    width: auto;
+                    visibility: hidden;
+                }
+                .linksCol {
+                    flex: 1;
+                    text-align: right;
+                }
+                a {
+                    padding:10px;
+                    font-family: Arial, sans-serif;
+                    font-size: small;
+                    text-decoration: none;
+                    text-decoration-color: rgb(37, 37, 37);
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+
+            </style>
+            <div class="row">
+                <div class="logoCol">
+                    <img id="brandLogo" src="google logo.png" alt="google logo" width="74px" height="24px">
+                </div>
+                
+                <div class="linksCol">
+                    <a href="imageSearch.htm">Image</a>
+                    <a href="advancedSearch.htm">Advanced</a>
+                    <a href="index.htm">Google</a>
+                </div>
+            </div>
+        </div>
+        <div class="logoContainer">
+            <img id="logo" src="google logo.png" alt="google logo">
+        </div>
+
+        <form action="https://google.com/images">
+            <div class="userText">
+                <input type="text" name="q">
+            </div>
+            <div class="buttons">
+                <input type="submit" value="Google Image Search">
+            </div>
+        </form>
+    </body>
+</html>
