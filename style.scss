@@ -1,0 +1,74 @@
+
+.logoContainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center
+}
+
+#logo {
+    margin: auto;
+    width: 272px;
+    height: 92px;
+    object-fit: contain;
+    object-position: center bottom;
+}
+.userText {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 20px;
+}
+form {
+    font-family: $fontFamily;
+    text-align: center;
+    box-sizing: border-box;
+    width: auto;
+    margin-top: 30px;
+    
+    input {
+        display: inline-block;
+    }
+
+    input[type="text"] {
+        border-radius: 25px;
+        border: 1px solid lightgray;
+        font-size: 16px;
+        height: max-content;
+        width: 584px;
+        padding: 10px;
+        position: relative;
+        display: flex;
+        
+    }
+    
+    input[type="submit"]  {
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin: 5px;
+        align-items: flex-start;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        border: 1px solid gray;
+    }
+    input[type="text"]:hover {
+        box-shadow: 0 1px 5px 2px lightgray;
+    }
+    input[type="text"]:active {
+        box-shadow: 0 1px 5px 2px lightgray;
+    }
+}
+
+hr {
+    color: gray;
+    width: max-content;
+}
+
+
+
+
